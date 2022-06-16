@@ -34,7 +34,7 @@
 .container-principal{
     display: grid;
     height: 100vh;
-    grid-template-rows: 100vh 100vh 98vh 2vh;
+    grid-template-rows: 100vh 100vh 100vh 3vh;
 }
 
 /** SECTION SOBRE **/
@@ -48,10 +48,8 @@
 }
 .conteudo-sobre-dir{
     grid-area: conteudo-sobre-dir;
-
     background-color: coral;
    
-
 }
 div > h2{
     text-transform: uppercase;
@@ -89,4 +87,64 @@ div > h2{
     background-position: 25%;
     background-repeat: no-repeat;
 }
+/** SECTION CONTATO **/
+.container-contato-ch{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 20% 80%;
 
+
+}
+.conteudo-contato h2{
+    margin: 5% 0 0 0;
+}
+.conteudo-contat{
+    margin: 5% 10%;
+}
+.contato-form-fa{
+    height: 100%;
+    background-color: gray;
+}
+.contato-form-ch{
+    height: 90%;
+    margin: 3% 10% 0;
+    background-color: bisque;
+}
+.contato-form-ch form{
+    height: 100%;
+    border-radius: 2px;
+    background-color: tomato;
+}
+.contato-form-ch form p{
+    font-size: 1.5em;
+    
+}
+.contato-form-ch form p:first-child{
+    margin-top: 20px;
+}
+.contato-form-ch form p:last-child{
+    margin-top: 10px;
+    
+}
+.contato-form-ch form input:last-child{
+    cursor: pointer;
+}
+.contato-form-ch form input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    margin: 2px 0 10px 0px;
+}
+
+.contato-form-ch form textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+/** FOOTER **/
+footer{
+    background-color: rosybrown;
+}
+footer p{
+    margin: 5px 0 0;
+    text-align: center;
+}
