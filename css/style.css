@@ -5,18 +5,20 @@
 }
 .cabecalho{
     display: grid;
-    grid-template-rows: repeat(2, 100%); 
+    height: auto;
+    grid-template-rows: 100px 40px; 
+    background-color: gray;
 }
 .logomarca{
     background-color: rgb(225, 200, 200);
     text-align: center;
 }
 .menu-horizontal{
-    background-color: gray;
-    padding: 20px;
+    margin: auto 0;
 }
 .menu-horizontal ul{
     text-align: center;  
+    
 
 }
 .menu-horizontal ul li{
@@ -31,4 +33,60 @@
 /** CONTAINER PRINCIPAL **/
 .container-principal{
     display: grid;
+    height: 100vh;
+    grid-template-rows: 100vh 100vh 98vh 2vh;
 }
+
+/** SECTION SOBRE **/
+.container-sobre-ch, .container-unidades-ch{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        'imagem-sobre-esq conteudo-sobre-dir'
+    ;
+}
+.conteudo-sobre-dir{
+    grid-area: conteudo-sobre-dir;
+
+    background-color: coral;
+   
+
+}
+div > h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40% 0 0 0;
+    
+}
+
+.conteudo_paragrafo {
+    text-align: justify;
+    margin: 1% 10%;
+}
+.imagem-sobre-esq{
+    grid-area: imagem-sobre-esq;
+    background-image: url("../images/img-sobre.jpg");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    
+}
+/** SECTION UNIDADES **/
+.container-unidades-ch{
+    grid-template-areas: 
+        'conteudo-unidades-esq imagem-unidades-dir'
+    ;
+}
+.conteudo-unidades-esq{
+    grid-area: conteudo-unidades-esq;
+    background-color: coral;
+}
+.imagem-unidades-dir{
+    grid-area: imagem-unidades-dir;
+    background-image: url("../images/img-unidades.jpg");
+    background-size: cover;
+    background-position: 25%;
+    background-repeat: no-repeat;
+}
+
