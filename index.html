@@ -77,7 +77,7 @@
                                 <p>Sua mensagem:</p>
                                 <textarea name="mensagem" id="mensagemCliente" cols="30" rows="10" required></textarea>
                                 </p>
-                                <p> <input type="submit"> </p>
+                                <p> <input type="submit" > </p>
                             </fieldset>
                         </form>
                     </div>
@@ -88,10 +88,13 @@
         </section>
         <footer>
             <p>Rua x - Vila y - XPTO || CNPJ 00.000.000/0001-00 || &copy; Pedro Soares Paulino </p>
-        </footer>
+        </footer>   
     </main>
-    <div id="chatbot">    
-    </div>
+    <!-- CHATBOT -->
+    <button id="chatbotBotaoAbrir" onclick="abrirChatBot()">CHAT</button>
+    <div id="appChatBot"></div>
+    
+   
 </body>
-
+<script src="./js/chatbot.js"></script>
 </html>

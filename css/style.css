@@ -4,19 +4,6 @@
     padding: 0;
 
 }
-
-html{
-    
-   
-    border: 10px solid rgb(0, 255, 42);
-   
-}
-body{
-    
-    border: 10px solid red;
-    
-    
-}
 :root{
 
     --font-family-principal: 'GT Walsheim Pro';
@@ -79,8 +66,8 @@ body{
 .container-principal{
     
     display: grid;
-    height: 100%;
-    grid-template-rows: 100% 100% 100% 3%;
+    height: 100vh;
+    grid-template-rows: 100vh 100vh 100vh 3vh;
     font-family: var(--font-family-principal);
 }
 
@@ -107,6 +94,7 @@ div > h2{
     background-color: rgb(117, 181, 248);
     color: white;
     border-radius: 10px;
+    box-shadow: 0px -5px 10px rgb(117, 181, 248);
     
 }
 
@@ -222,14 +210,132 @@ footer p{
 }
 
 /** CHATBOT **/
-#chatbot{
- 
-    margin: 0;
-    padding: 0;
-    position: absolute;
+#chatbotBotaoAbrir{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
     background-color: orange;
-    width: 200px;
-    height: 200px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(117, 181, 248);
+    box-shadow: 0px 0px 15px rgb(33, 133, 240);
+    color: white;
+    font-family: var(--font-family-principal);
+}
+#chatbotBotaoFechar{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(117, 181, 248);
+    box-shadow: 0px 0px 15px rgb(33, 133, 240);
+    color: white;
+    font-family: var(--font-family-principal);
+}
+#chatBot{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(117, 181, 248);
+    border: 5px solid rgb(168, 201, 237);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 15px rgb(33, 133, 240);
+    width: 400px;
+    height: 500px;
+    margin: 10px;
     
+
+}
+.telaChat{
+    display: grid;
+    grid-template-rows: 95% 10%;
+    width: 95%;
+    height: 95%;
+    margin: 10px;
+    background-color:rgb(168, 201, 237);
+    box-shadow: inset 0px 0px 15px rgb(33, 133, 240);
+}
+.displayDeMensagens{
+    margin: 20px;
+}
+/* AREA DO BOT */
+.areaDoBot{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 10%;
+    
+}
+.retrato{
+    min-height: 100%;
+    background-color: blue;
+    padding: 0px;
+   
+}
+.fotoDoRetrato{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+   
+}
+.areaDeMensagemBot{
+    width: 100%;
+    background-color: brown;
+    height: 100%;
+    
+}
+.mensagemBot{
+    width: 100%;
+    margin: 12px;
+}
+/* AREA DO CLIENTE */
+#areaDoCliente{
+    
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-top: 20px;
+    min-height: 10%;
+    
+}
+.retratoCliente{ 
+    padding: 20px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.areaDeMensagemCliente{
+    width: 100%;
+    background-color: brown;
+    height: 100%;
+    
+}
+.mensagemCliente{
+    
+    width: 100%;
+    margin: 12px;
+}
+
+.teclado{
+    display: flex;
+    background-color: aliceblue;
+    width: 90%;
+    margin: 0px 20px 30px;
+    justify-content: space-between;
+
+}
+.teclado input{
+   width: 80%;
+}
+.teclado button{
+    width: 19%;
 }
