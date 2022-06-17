@@ -4,6 +4,19 @@
     padding: 0;
 
 }
+
+html{
+    
+   
+    border: 10px solid rgb(0, 255, 42);
+   
+}
+body{
+    
+    border: 10px solid red;
+    
+    
+}
 :root{
 
     --font-family-principal: 'GT Walsheim Pro';
@@ -64,16 +77,17 @@
 }
 /** CONTAINER PRINCIPAL **/
 .container-principal{
+    
     display: grid;
-    height: 100vh;
-    grid-template-rows: 100vh 100vh 100vh 3vh;
+    height: 100%;
+    grid-template-rows: 100% 100% 100% 3%;
     font-family: var(--font-family-principal);
 }
 
 /** SECTION SOBRE **/
 .container-sobre-ch, .container-unidades-ch{
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
         'imagem-sobre-esq conteudo-sobre-dir'
@@ -98,7 +112,7 @@ div > h2{
 
 .conteudo_paragrafo {
     text-align: justify;
-    margin: 1% 10%;
+    padding: 1% 10%;
 }
 .imagem-sobre-esq{
     grid-area: imagem-sobre-esq;
@@ -133,7 +147,7 @@ div > h2{
 /** SECTION CONTATO **/
 .container-contato-ch{
     display: grid;
-    height: 100vh;
+    height: 100%;
     grid-template-rows: 20% 80%;
     
 
@@ -146,6 +160,7 @@ div > h2{
 .conteudo-contat{
     margin: 5% 10%;
 }
+
 .contato-form-fa{
     height: 100%;
     background-color: rgb(117, 181, 248);
@@ -204,4 +219,17 @@ footer p{
     margin: 5px 0 0;
     text-align: center;
     color: rgb(117, 181, 248);;
+}
+
+/** CHATBOT **/
+#chatbot{
+ 
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
 }
