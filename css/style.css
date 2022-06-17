@@ -9,15 +9,13 @@
     --font-family-principal: 'GT Walsheim Pro';
  
 }
-.opacidade-0{
-    opacity: 0.;
-}
+
 .cabecalho{
     display: grid;
     height: 100%;
     grid-template-rows: 100px 40px; 
-    background-color: black;
-    
+    background-color: rgb(117, 181, 248);
+    color: white;
     
 }
 .font_uppercase{
@@ -30,12 +28,12 @@
     background-image: url(../images/img-cabecalho.png);
     background-position: 50% 60%;
     background-repeat: no-repeat;
+   
 
 }
 .logomarca h1{
     margin: .8em 0 0.30em;
     line-height: 50%;
-    text-shadow: 0px 1px 20px;
     font-size: 2.2em;
     
   
@@ -45,7 +43,8 @@
     height: 100%;
     margin: auto 0;
     background-image: var(--cor-menu-bgimg);
-    box-shadow: 0px -5px 10px black;
+    box-shadow: 0px -5px 10px rgb(117, 181, 248);
+    
 
 }
 .menu-horizontal ul{
@@ -68,7 +67,7 @@
     display: grid;
     height: 100vh;
     grid-template-rows: 100vh 100vh 100vh 3vh;
-    
+    font-family: var(--font-family-principal);
 }
 
 /** SECTION SOBRE **/
@@ -82,13 +81,18 @@
 }
 .conteudo-sobre-dir{
     grid-area: conteudo-sobre-dir;
-    background-color: coral;
+   
+    
+    
    
 }
 div > h2{
     text-transform: uppercase;
     text-align: center;
-    margin: 40% 0 0 0;
+    margin: 40% 10% 3%;
+    background-color: rgb(117, 181, 248);
+    color: white;
+    border-radius: 10px;
     
 }
 
@@ -102,6 +106,8 @@ div > h2{
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
+    box-shadow: inset 0 0 1.5em black;
+    border-radius: 3px;
     
 }
 /** SECTION UNIDADES **/
@@ -112,7 +118,8 @@ div > h2{
 }
 .conteudo-unidades-esq{
     grid-area: conteudo-unidades-esq;
-    background-color: coral;
+    
+
 }
 .imagem-unidades-dir{
     grid-area: imagem-unidades-dir;
@@ -120,37 +127,49 @@ div > h2{
     background-size: cover;
     background-position: 25%;
     background-repeat: no-repeat;
+    box-shadow: inset 0 0 1.5em black;
+    border-radius: 3px;
 }
 /** SECTION CONTATO **/
 .container-contato-ch{
     display: grid;
     height: 100vh;
     grid-template-rows: 20% 80%;
+    
 
 
 }
 .conteudo-contato h2{
-    margin: 5% 0 0 0;
+    margin: 5% 10% 0 ;
+    
 }
 .conteudo-contat{
     margin: 5% 10%;
 }
 .contato-form-fa{
     height: 100%;
-    background-color: gray;
+    background-color: rgb(117, 181, 248);
+    
 }
 .contato-form-ch{
     height: 90%;
     margin: 3% 10% 0;
-    background-color: bisque;
+    background-color: rgb(117, 181, 248);
+    box-shadow: 0px 0px 15px rgb(33, 133, 240);
+    border-radius: 10px;
+    
 }
 .contato-form-ch form{
     height: 100%;
-    border-radius: 2px;
-    background-color: tomato;
+   
+    
 }
 .contato-form-ch form p{
     font-size: 1.5em;
+    
+    color: white;
+    
+    
     
 }
 .contato-form-ch form p:first-child{
@@ -162,23 +181,27 @@ div > h2{
 }
 .contato-form-ch form input:last-child{
     cursor: pointer;
+    box-shadow:  0px 0px 2px;
 }
 .contato-form-ch form input{
     width: 100%;
     border-radius: 5px;
     height: 40px;
     margin: 2px 0 10px 0px;
+    box-shadow: inset 0px 0px 5px;
 }
 
 .contato-form-ch form textarea{
     width: 100%;
     border-radius: 5px;
+    box-shadow: inset 0px 0px 5px;
 }
 /** FOOTER **/
 footer{
-    background-color: rosybrown;
+    background-color: white;
 }
 footer p{
     margin: 5px 0 0;
     text-align: center;
+    color: rgb(117, 181, 248);;
 }
